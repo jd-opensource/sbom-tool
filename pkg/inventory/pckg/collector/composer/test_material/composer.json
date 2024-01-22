@@ -1,0 +1,29 @@
+{
+  "name": "test/php-test",
+  "type": "library",
+  "description": "SDK for PHP",
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "test1"
+    }
+  ],
+  "require": {
+    "php": ">=7.4.0",
+    "ext-xml": "*",
+    "myclabs/php-enum": "~1 || ~1.2.2 || ~1.7.7 || ~1.3.5",
+    "guzzlehttp/guzzle": "^7.2",
+    "fakerphp/faker1": "^1.29.1",
+    "fakerphp/faker2": "v1.0.0",
+    "fakerphp/faker3": "v4.4.1beta2",
+    "fakerphp/faker4": "v4.4.2-dev",
+    "squizlabs/php_codesniffer": "2.*",
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9",
+    "phan/phan": "2.7.1"
+  }
+}
+

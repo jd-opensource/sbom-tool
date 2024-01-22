@@ -1,0 +1,14 @@
+Flask-Bootstrap==3.3.6.0
+# This is a comment.
+# TensorFlow == 1.2.3
+Flask-Login==0.3.2
+==2.1.1
+ Flask-Migrate==1.8.1
+Flask-Moment==0.5.1
+Pygame != 3.7 # This is a comment
+SciPy >= 1.0.0
+Flask-Script==2.0.5 ; python_version < '3.8'
+-r requirements.txt
+Flask-PageDown==0.2.1 \
+  --hash=sha256:e9535b8c84dc9571a1b74f3e5f3ac0105a58405bb65
+Pandas==0.26.3 --hash=sha256:a9b3aaa1904eeb78e3b4af6dc488daa58971bdc7d7fcaf3 --hash=sha256:e9535b8c84dc9571a48999094fda8405bb65

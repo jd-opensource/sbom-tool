@@ -1,0 +1,9 @@
+# This is a Gradle generated file for dependency locking.
+# Manual edits can break the build and are not advised.
+# This file is expected to be part of source control.
+ch.qos.logback:logback-classic:1.4.5=aotCompileClasspath,aotTestCompileClasspath,compileClasspath,nativeImageClasspath,nativeImageTestClasspath,processAotClasspath,processTestAotClasspath,productionRuntimeClasspath,runtimeClasspath,testCompileClasspath,testRuntimeClasspath
+ch.epfl.scala:scalafix-interfaces:0.10.4=classpath
+com.adtran:scala-multiversion-plugin:2.0.4=classpath
+com.fasterxml.jackson:jackson-bom:2.11.0=classpath
+com.github.alisiikh:gradle-scalastyle-plugin:3.4.1=classpath
+empty=aotAnnotationProcessor,aotRuntimeClasspath,aotTestAnnotationProcessor,aotTestRuntimeClasspath,testAnnotationProcessor

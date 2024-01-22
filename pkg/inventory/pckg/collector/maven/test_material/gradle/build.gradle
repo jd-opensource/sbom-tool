@@ -1,0 +1,7 @@
+dependencies {
+         androidTestImplementation 'com.android.support.test:runner:1.0.1'
+         implementation 'com.android.support.constraint:constraint-layout:$version'
+         compile "joda-time:joda-time:2.2"
+         implementation project(':sample-android-lib')
+         implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

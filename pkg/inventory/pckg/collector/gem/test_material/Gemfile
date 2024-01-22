@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# Specify your gem's dependencies in foodie.gemspec
+gemspec
+
+gem "rake", "~> 13.0"
+gem "nokogiri", ">= 1.4.2"
+gem "webmock", require: false
+gem "byebug", "1.0", require: true
+gem "rspec", group: :test
+gem "wirble", groups: [:development, :test]
+gem "weakling",   platforms: :jruby
+gem "ruby-debug", platforms: :mri_31
+gem "rails", "1.4.2"
+gem "core", path: "../core"
+gem "rake"

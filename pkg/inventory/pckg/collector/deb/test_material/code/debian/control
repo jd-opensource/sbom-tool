@@ -1,0 +1,53 @@
+Source: ukui-panel
+Section: x11
+Priority: optional
+Maintainer: kylin Team <team+kylin@tracker.debian.org>
+Uploaders: Aron Xu <aron@debian.org>,
+           handsome_feng <jianfengli@ubuntukylin.com>
+Build-Depends: cmake,
+               debhelper-compat (= 12),
+               extra-cmake-modules,
+               libdbusmenu-qt5-dev,
+               libdrm-dev,
+               libglib2.0-dev(>=2.36),
+               libgsettings-qt-dev,
+               libkf5i18n-dev,
+               libkf5screen-dev,
+               libkf5wayland-dev,
+               libkf5windowsystem-dev,
+               libkysdk-sysinfo-dev,
+               libkysdk-qtwidgets-dev,
+               libkysdk-waylandhelper-dev,
+               libpipewire-0.3-dev,
+               libqt5x11extras5-dev,
+               libqt5xdg-dev,
+               libukui-log4qt-dev,
+               libx11-dev,
+               libxcb-composite0-dev,
+               libxcb-damage0-dev,
+               libxcb-image0-dev,
+               libxcb-shape0-dev,
+               libxcb-util0-dev,
+               libxtst-dev,
+               plasma-wayland-protocols,
+               qtbase5-dev,
+               qtbase5-private-dev,
+               qtdeclarative5-dev,
+               qttools5-dev,
+               qtwayland5-dev-tools
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Vcs-Browser: https://github.com/ukui/ukui-panel
+Vcs-Git: https://github.com/ukui/ukui-panel
+Homepage: https://github.com/ukui/ukui-panel
+
+Package: ukui-panel
+Architecture: any
+Depends: libkysdk-system, ${misc:Depends}, ${shlibs:Depends}
+Provides: ukui-indicators
+Suggests: time-shutdown, ukui-window-switch (>=3.0.0-3)
+Description: ukui desktop panel
+ The ukui desktop panel is used on ukui desktop and has some plugins like
+ starmenu, quicklaunch and other useful tools.
+ .
+ This package contains the ukui panel.

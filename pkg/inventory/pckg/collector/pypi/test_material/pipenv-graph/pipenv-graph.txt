@@ -1,0 +1,18 @@
+Flask==2.2.5
+  - click [required: >=8.0, installed: 8.1.7]
+    - importlib-metadata [required: Any, installed: 6.7.0]
+      - typing-extensions [required: >=3.6.4, installed: 4.7.1]
+      - zipp [required: >=0.5, installed: 3.15.0]
+  - importlib-metadata [required: >=3.6.0, installed: 6.7.0]
+    - typing-extensions [required: >=3.6.4, installed: 4.7.1]
+    - zipp [required: >=0.5, installed: 3.15.0]
+  - itsdangerous [required: >=2.0, installed: 2.1.2]
+  - Jinja2 [required: >=3.0, installed: 3.1.2]
+    - MarkupSafe [required: >=2.0, installed: 2.1.3]
+  - Werkzeug [required: >=2.2.2, installed: 2.2.3]
+    - MarkupSafe [required: >=2.1.1, installed: 2.1.3]
+requests==2.31.0
+  - certifi [required: >=2017.4.17, installed: 2023.7.22]
+  - charset-normalizer [required: >=2,<4, installed: 3.2.0]
+  - idna [required: >=2.5,<4, installed: 3.4]
+  - urllib3 [required: >=1.21.1,<3, installed: 2.0.4]

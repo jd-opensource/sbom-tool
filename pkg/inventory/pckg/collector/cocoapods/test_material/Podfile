@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'swiftdemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for swiftdemo
+  pod 'AFNetworking', '~> 4.0'
+  pod 'SwiftyJSON', '~> 2.3'
+  pod 'Alamofire', :version => '~> 1.3'
+  pod 'AlamofirePath', :path => '~/Documents/Alamofire'
+  pod 'AlamofireGit', :git => 'https://github.com/Alamofire/Alamofire.git'
+  pod 'AlamofireGitBranch', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'dev'
+  pod 'AlamofireGitTag', :git => 'https://github.com/Alamofire/Alamofire.git', :tag => '3.1.1'
+  pod 'AlamofireGitCommit', :git => 'https://github.com/Alamofire/Alamofire.git', :commit => '0f506b1c45'
+
+
+  target 'swiftdemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'swiftdemoUITests' do
+    # Pods for testing
+  end
+
+end

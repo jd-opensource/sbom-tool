@@ -1,0 +1,22 @@
+dependencies:
+  wj-demo2: 1.1.3
+lockfileVersion: 5.1
+packages:
+  /tslib/2.3.0:
+    dev: false
+    resolution:
+      integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
+  /wj-demo2/1.1.3:
+    dependencies:
+      zrender: 5.4.4
+    dev: false
+    resolution:
+      integrity: sha512-RMQouNbQLCXMGRMg8CU93Uqh76YDjjQUatfmuctFdNMbVexy1W03I1DLKv/n7SoafbX5lZ8c6ZVB7Pf76ak7iA==
+  /zrender/5.4.4:
+    dependencies:
+      tslib: 2.3.0
+    dev: false
+    resolution:
+      integrity: sha512-0VxCNJ7AGOMCWeHVyTrGzUgrK4asT4ml9PEkeGirAkKNYXYzoPJCLvmyfdoOXcjTHPs10OZVMfD1Rwg16AZyYw==
+specifiers:
+  wj-demo2: ^1.1.3

@@ -1,0 +1,38 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - FLKAutoLayout (0.2.1)
+  - ORStackView (3.0.1):
+    - FLKAutoLayout (~> 0.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 4.0)
+  - ORStackView (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - FLKAutoLayout
+    - ORStackView
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
+  ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
+
+PODFILE CHECKSUM: d303bb95584bf0a2de06b1b32fe03f88e332813e
+
+COCOAPODS: 1.12.1

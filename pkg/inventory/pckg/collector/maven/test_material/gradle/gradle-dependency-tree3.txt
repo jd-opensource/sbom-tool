@@ -1,0 +1,24 @@
+
+------------------------------------------------------------
+Root project 'codescanner'
+------------------------------------------------------------
+
+runtimeClasspath - Runtime classpath of compilation 'main' (target  (jvm)).
++--- project :
+|    +--- com.diffplug.spotless:spotless-plugin-gradle:{strictly 6.6.0} -> 6.6.0 (c)
+|    \--- com.github.ben-manes.caffeine:caffeine:{strictly 3.1.6} -> 3.1.6 (c)
++--- project :gradle-junit-reports
+|    \--- org.jetbrains.kotlin:kotlin-stdlib:1.6.10 (*)
+|--- project : (*)
++--- io.vertx:vertx-core:4.2.5
+|    +--- io.netty:netty-common:4.1.74.Final
++--- org.apache.maven.shared:maven-dependency-analyzer -> 1.13.2
+|    +--- org.apache.maven:maven-core:3.2.5 -> 3.9.1
+|    |    +--- org.apache.maven:maven-model:3.9.1
+|    |    |    \--- org.codehaus.plexus:plexus-utils:3.5.1
+|    |    \--- org.apache.maven:maven-settings:3.9.1
+
+(c) - dependency constraint
+(*) - dependencies omitted (listed previously)
+
+A web-based, searchable dependency report is available by adding the --scan option.

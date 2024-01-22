@@ -1,0 +1,23 @@
+[package]
+name = "suspicious-pods"
+version = "1.2.0"
+authors = ["edrevo <joaquin.guantergonzalbez@telefonica.com>"]
+edition = "2018"
+keywords = ["k8s", "kubernetes"]
+description = "Prints a list of k8s pods that might not be working correctly"
+license = "Apache-2.0"
+repository = "https://github.com/edrevo/suspicious-pods"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+
+[dependencies]
+itertools = "0.10"
+suspicious-pods-lib = { version = "1.2.0", path = "lib" }
+rustorm-derive = {path = "rustorm-derive", version = "0.1"}
+core = { path = "../core" }
+xi-core-lib = { git = "https://github.com/google/xi-editor", rev = "65911d9" }
+
+[dependencies.crossbeam]
+git = "https://github.com/aturon/crossbeam.git"
+branch = "master"

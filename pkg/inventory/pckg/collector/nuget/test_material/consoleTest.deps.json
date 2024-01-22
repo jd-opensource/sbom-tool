@@ -1,0 +1,81 @@
+{
+  "runtimeTarget": ".NETStandardApp,Version=v1.5/osx.10.10-x64",
+  "compilationOptions": {
+    "defines": [ "DEBUG" ]
+  },
+  "targets": {
+    ".NETStandardApp,Version=v1.5": {
+      "MyApp/1.0": {
+        "type": "project",
+        "dependencies": {
+          "AspNet.Mvc": "1.0.0"
+        }
+      },
+      "System.Foo/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        }
+      },
+      "System.Banana/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Foo": "1.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.4/System.Banana.dll": { }
+        }
+      }
+    },
+    ".NETStandardApp,Version=v1.5/osx.10.10-x64": {
+      "MyApp/1.0": {
+        "type": "project",
+        "dependencies": {
+          "AspNet.Mvc": "1.0.0"
+        }
+      },
+      "System.Foo/1.0.0": {
+        "type": "package",
+        "runtime": {
+          "lib/dnxcore50/System.Foo.dll": { }
+        },
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        }
+      },
+      "System.Banana/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Foo": "1.0.0"
+        },
+        "runtime": {
+          "lib/dnxcore50/System.Banana.dll": { }
+        },
+        "resources": {
+          "lib/dnxcore50/fr-FR/System.Banana.resources.dll": { "locale": "fr-FR" }
+        },
+        "native": {
+          "runtimes/osx.10.10-x64/native/libbananahelper.dylib": { }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyApp/1.0": {
+      "type": "project"
+    },
+    "System.Foo/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "[base64 string]"
+    },
+    "System.Banana/1.0.0": {
+      "type": "package",
+      "sha512": "[base64 string]"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "sha512": "[base64 string]"
+    }
+  }
+}

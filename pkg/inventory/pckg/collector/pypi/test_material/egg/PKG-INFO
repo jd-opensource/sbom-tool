@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: testlib
+Version: 1.0.0
+Summary: test lib
+Home-page: https://github.com/test/testlib
+Author: test
+Author-email: test@example.com
+License: UNKNOWN
+Description: # testlib (test lib)
+
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

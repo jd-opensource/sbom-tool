@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/wangjun157/Projects/consoleTest/consoleTest/consoleTest.csproj": {}
+  },
+  "projects": {
+    "/Users/wangjun157/Projects/consoleTest/consoleTest/consoleTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/wangjun157/Projects/consoleTest/consoleTest/consoleTest.csproj",
+        "projectName": "consoleTest",
+        "projectPath": "/Users/wangjun157/Projects/consoleTest/consoleTest/consoleTest.csproj",
+        "packagesPath": "/Users/wangjun157/.nuget/packages/",
+        "outputPath": "/Users/wangjun157/Projects/consoleTest/consoleTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/wangjun157/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

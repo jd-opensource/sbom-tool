@@ -1,0 +1,40 @@
+{
+ "_meta": {
+        "hash": {
+            "sha256": "..."
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "2.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "django": {
+            "hashes": [
+                "sha256:..."
+            ],
+            "version": "==3.2.5"
+        },
+        "requests": {
+            "hashes": [
+                "sha256:..."
+            ],
+            "version": "==2.25.2"
+        }
+    },
+    "develop": {
+        "pytest": {
+            "hashes": [
+                "sha256:..."
+            ],
+            "version": "==6.2.4"
+        }
+    }
+}

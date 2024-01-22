@@ -1,0 +1,21 @@
+org.example:test-web:jar:1.0-SNAPSHOT
++- org.example:test-service:jar:jdk15-javadoc:1.0-SNAPSHOT:compile
+|  \- org.example:test-dao:jar:1.0-SNAPSHOT:compile
++- org.example:idolTrainee-common:jar:1.0-SNAPSHOT:compile
+|  +- org.springframework.boot:spring-boot-starter-log4j2:jar:2.6.8:compile
+|  |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.17.2:compile
+|  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.17.2:compile
+|  |  +- org.apache.logging.log4j:log4j-jul:jar:2.17.2:compile
+|  |  \- org.slf4j:jul-to-slf4j:jar:1.7.36:compile
+|  +- mysql:mysql-connector-java:jar:8.0.29:compile
+|  |  +- com.baomidou:mybatis-plus:jar:3.5.0:compile
+|  |  |  \- com.baomidou:mybatis-plus-extension:jar:3.5.0:compile
+|  |  |     \- com.baomidou:mybatis-plus-core:jar:3.5.0:compile
+|  |  |        \- com.github.jsqlparser:jsqlparser:jar:4.3:compile
+|  +- com.baomidou:mybatis-plus-boot-starter:jar:3.5.0:compile
+|  |  +- com.baomidou:mybatis-plus:jar:3.5.0:compile
+|  |  |  \- com.baomidou:mybatis-plus-extension:jar:3.5.0:compile
+|  |  |     \- com.baomidou:mybatis-plus-core:jar:3.5.0:compile
+|  |  |        \- com.github.jsqlparser:jsqlparser:jar:4.3:compile
+|  |  \- org.springframework.boot:spring-boot-autoconfigure:jar:2.6.8:compile
+

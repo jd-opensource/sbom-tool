@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sbom</groupId>
+    <artifactId>pomtest1</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>pomtest1</name>
+    <description>pomtest1</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.1.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr-runtime</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.tmatesoft.sqljet</groupId>
+            <artifactId>sqljet</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>group-1</groupId>
+            <artifactId>artifact-1</artifactId>
+            <version>${versionXXXX}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>group-2</groupId>
+            <artifactId>artifact-2</artifactId>
+            <version>[0,2.0.0)</version>
+        </dependency>
+
+        <dependency>
+            <groupId>${groupAAA}</groupId>
+            <artifactId>${artifactBBB}</artifactId>
+            <version>${versionCCC}</version>
+        </dependency>
+
+
+
+
+
+    </dependencies>
+
+</project>

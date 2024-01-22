@@ -1,0 +1,24 @@
+{
+  "name": "wj-demo3",
+  "version": "8.8.2",
+  "description": "this is desc",
+  "main": "word.js",
+  "dependencies": {
+    "wj-demo2": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node word.js",
+    "pua": "node word.js"
+  },
+  "keywords": [
+    "a",
+    "b",
+    "c"
+  ],
+  "author": "wjj",
+  "license": {
+    "type": "MIT",
+    "url": "https://www.opensource.org/licenses/mit-license.php"
+  }
+}

@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: BeautifulSoup
+Version: 3.2.2
+Summary: Screen-scraping library
+Home-page: http://www.crummy.com/software/BeautifulSoup/
+Author: Leonard Richardson
+Author-email: leonardr@segfault.org
+License: MIT
+Download-URL: http://www.crummy.com/software/BeautifulSoup/download/
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Topic :: Text Processing :: Markup :: SGML
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+Beautiful Soup is a library that makes it easy to scrape information
+from web pages. It sits atop an HTML or XML parser, providing Pythonic
+idioms for iterating, searching, and modifying the parse tree.
+
+# Discontinuation notice
+
+You should use the 'beautifulsoup4' package instead of this package.
+
+Development on the 3.x series of Beautiful Soup ended in 2011, and the
+series will be discontinued on January 1, 2021, one year after the
+Python 2 sunsetting date. At some point after that, the
+'beautifulsoup' pip package will be updated to a recent version of
+Beautiful Soup. This will free up the 'beautifulsoup' package name to
+be used by a more recent release.
+
+If you're relying on version 3 of Beautiful Soup, you really ought to
+port your code to Python 3. A relatively small part of this work will
+be migrating your Beautiful Soup code to Beautiful Soup 4.
