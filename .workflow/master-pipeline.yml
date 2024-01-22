@@ -1,6 +1,6 @@
 version: '1.0'
-name: master-pipeline
-displayName: MasterPipeline
+name: branch-pipeline
+displayName: BranchPipeline
 stages:
   - stage: 
     name: compile
@@ -10,20 +10,18 @@ stages:
         name: build_golang
         displayName: Golang 构建
         # 支持1.8、1.10、1.11、1.12、1.13、1.14、1.15、1.16八个版本
-        golangVersion: 1.12
+        golangVersion: 1.21
         # 构建命令
         commands: |
           mkdir output
-          make release
-          
-          mv dist/checksums.txt output/
-          mv dist/*.zip output/
-          mv dist/*.tar.gz output/
-          mv dist/*.apk output/
-          mv dist/*.deb output/
-          mv dist/*.rpm output/
-
-        # 非必填字段，开启后表示将构建产物暂存，但不会上传到制品库中，24小时后自动清除
+          GOOS=linux GOARCH=amd64 go build -o output/main.amd64 main.go
+          GOOS=linux GOARCH=386 go build -o output/main.linux32 main.go
+          GOOS=windows GOARCH=amd64 go build -o output/main.win64.exe main.go
+          GOOS=windows GOARCH=386 go build -o output/main.win32.exe main.go
+          GOOS=darwin GOARCH=amd64 go build -o output/main.darwin main.go 
+          chmod +X output/main.linux32
+          ./output/main.linux32
+        # 非必填字段，开启后表示将构建产物暂存，但不会上传到制品库中，7天后自动清除
         artifacts:
             # 构建产物名字，作为产物的唯一标识可向下传递，支持自定义，默认为BUILD_ARTIFACT。在下游可以通过${BUILD_ARTIFACT}方式引用来获取构建物地址
           - name: BUILD_ARTIFACT
@@ -48,11 +46,13 @@ stages:
         # 上游上传制品任务的产出
         dependArtifact: output
         # 发布制品版本号
-        version: '0.1.0'
+        version: '1.0.0.0'
         # 是否开启版本号自增，默认开启
-        autoIncrement: false
+        autoIncrement: true
 triggers:
   push:
     branches:
-      include:
+      exclude:
         - master
+      include:
+        - .*
