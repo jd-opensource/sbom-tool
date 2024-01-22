@@ -162,4 +162,4 @@ If you encounter problems in use, you are welcome to submit ISSUE to us.
 SBOM-TOOL is a open source software component analysis tool, look forward to your contribution.
 
 ## License
-This project is licensed under Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under **MulanPSL2** - see the [LICENSE](LICENSE) file for details.

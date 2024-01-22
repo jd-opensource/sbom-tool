@@ -166,4 +166,4 @@ sbom-tool info
 SBOM-TOOL 是一款开源的软件成分分析工具，期待您的贡献。
 
 ## 许可证
-此项目是在Apache License 2.0下授权的，有关详细信息，请参阅[许可证文件](LICENSE)。
+此项目是在 **MulanPSL2** 下授权的，有关详细信息，请参阅[许可证文件](LICENSE)。
