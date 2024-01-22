@@ -74,7 +74,7 @@ nfpms:
     homepage: https://sbom.jd.com
     description: SBOM-TOOL is a command-line tool to generates software bill of materials (SBOM) for software projects.
     maintainer: JDSBOM <org.sbom1@jd.com>
-    license: Apache-2.0
+    license: MulanPSL-2.0
     vendor: Jingdong Technology Information Technology Co., Ltd.
     bindir: /usr/bin
     section: utils
