@@ -14,7 +14,7 @@ import (
 	"reflect"
 	"testing"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 func TestGoModFileParser_Parse(t *testing.T) {

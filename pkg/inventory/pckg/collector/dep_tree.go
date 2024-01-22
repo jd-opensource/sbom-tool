@@ -13,8 +13,8 @@ package collector
 import (
 	"sort"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
 )
 
 // DependencyTree maintains the package list and dependencies, and provides some useful methods

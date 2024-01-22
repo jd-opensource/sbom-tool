@@ -17,7 +17,7 @@ import (
 	"io"
 	"os"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 // ZipReadCloser zip Reader and Closer

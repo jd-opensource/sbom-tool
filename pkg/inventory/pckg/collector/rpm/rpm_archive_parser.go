@@ -17,10 +17,10 @@ import (
 
 	"github.com/cavaliergopher/rpm"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 // RPMArchiveParser is a parser for rpm archive file

@@ -19,7 +19,7 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/ziputil"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/ziputil"
 )
 
 const (

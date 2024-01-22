@@ -13,7 +13,7 @@ package pypi
 import (
 	"github.com/anchore/packageurl-go"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
 )
 
 type Collector struct {

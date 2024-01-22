@@ -11,7 +11,7 @@
 package conda
 
 import (
-	collector2 "gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	collector2 "gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
 )
 
 type Collector struct {

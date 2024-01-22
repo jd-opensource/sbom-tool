@@ -15,7 +15,7 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 func TestParseJarNoDepFile(t *testing.T) {

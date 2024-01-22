@@ -17,9 +17,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/require"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/license"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/license"
 )
 
 func TestDEBArchiveParser_Parse(t *testing.T) {

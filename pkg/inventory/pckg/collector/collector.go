@@ -18,8 +18,8 @@ import (
 	"github.com/anchore/packageurl-go"
 	"golang.org/x/exp/slices"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
 )
 
 var strictMode bool

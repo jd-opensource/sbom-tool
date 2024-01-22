@@ -14,7 +14,7 @@ import (
 	"github.com/anchore/packageurl-go"
 	"github.com/microsoft/go-rustaudit"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 /*

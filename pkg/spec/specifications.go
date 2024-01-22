@@ -17,10 +17,10 @@ import (
 	"io"
 	"strings"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format"
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format/spdx"
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format/xspdx"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format/spdx"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format/xspdx"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
 )
 
 const _SEP = format.SEP

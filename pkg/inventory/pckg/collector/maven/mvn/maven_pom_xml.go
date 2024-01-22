@@ -21,7 +21,7 @@ import (
 	"github.com/vifraa/gopom"
 	"golang.org/x/net/html/charset"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
 )
 
 var propertyMatcher = regexp.MustCompile("[$][{][^}]+[}]")

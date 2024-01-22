@@ -17,11 +17,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/config"
-	"gitee.com/jd-opensource/sbom-tool/pkg/fingerprint/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/source"
-	model3 "gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/config"
+	"gitee.com/JD-opensource/sbom-tool/pkg/fingerprint/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/source"
+	model3 "gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 // AssemblySBOM assembles a SBOM from files

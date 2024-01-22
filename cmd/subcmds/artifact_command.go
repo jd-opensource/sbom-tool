@@ -16,10 +16,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/config"
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/artifact"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/config"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/artifact"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 var (

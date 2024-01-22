@@ -13,9 +13,9 @@ package subcmds
 import (
 	"github.com/spf13/cobra"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/config"
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/env"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/config"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/env"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 // envCmd represents the env command

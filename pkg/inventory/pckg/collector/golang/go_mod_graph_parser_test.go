@@ -17,7 +17,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 func TestGoModGraphParser_Parse(t *testing.T) {

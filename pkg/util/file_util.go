@@ -16,8 +16,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/pattern_set"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/pattern_set"
 )
 
 // WalkFilesWithMatcher walks the file tree rooted at path, sending the paths of all regular files to pathChan.

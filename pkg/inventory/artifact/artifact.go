@@ -21,13 +21,13 @@ import (
 	"github.com/anchore/packageurl-go"
 	"golang.org/x/exp/slices"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/config"
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/env"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/license"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/ziputil"
+	"gitee.com/JD-opensource/sbom-tool/pkg/config"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/env"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/license"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/ziputil"
 )
 
 // artifactExts is the supported artifact extensions

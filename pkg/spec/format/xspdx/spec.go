@@ -13,9 +13,9 @@ package xspdx
 import (
 	"errors"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format"
-	xspdxModel "gitee.com/jd-opensource/sbom-tool/pkg/spec/format/xspdx/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format"
+	xspdxModel "gitee.com/JD-opensource/sbom-tool/pkg/spec/format/xspdx/model"
 )
 
 var ErrDocumentEmpty = errors.New("document is empty")

@@ -16,7 +16,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format"
 )
 
 func TestDetectFormat(t *testing.T) {

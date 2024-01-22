@@ -10,7 +10,7 @@
 
 package deb
 
-import "gitee.com/jd-opensource/sbom-tool/pkg/model"
+import "gitee.com/JD-opensource/sbom-tool/pkg/model"
 
 func Name() string {
 	return "deb"

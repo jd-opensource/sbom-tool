@@ -18,7 +18,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/config"
+	"gitee.com/JD-opensource/sbom-tool/pkg/config"
 )
 
 var (

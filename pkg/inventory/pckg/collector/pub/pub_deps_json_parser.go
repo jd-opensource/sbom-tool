@@ -15,8 +15,8 @@ import (
 	"os"
 	"sort"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 // PubDepsJSONParser is a parser for output of executing 'pub deps' command

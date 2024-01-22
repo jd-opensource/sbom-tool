@@ -15,7 +15,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 // GetTextFromZip get content by path from given archive file

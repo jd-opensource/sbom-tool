@@ -15,7 +15,7 @@ import (
 	"encoding/json"
 	"io"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format/xspdx/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format/xspdx/model"
 )
 
 func Read(content io.Reader) (*model.XSPDXDocument, error) {

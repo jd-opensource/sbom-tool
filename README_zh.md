@@ -78,7 +78,7 @@ SBOM-TOOL 是通过源码仓库、代码指纹、构建环境、制品信息、�
 ## 下载安装
 1. 下载源码编译(需要 `go 1.18` 及以上版本)
    ```shell
-   git clone git@gitee.com:jd-opensource/sbom-tool.git
+   git clone git@gitee.com:JD-opensource/sbom-tool.git
    cd sbom-tool
    make
    ```

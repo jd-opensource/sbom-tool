@@ -20,10 +20,10 @@ import (
 	"github.com/blacktop/go-macho"
 	"github.com/blacktop/go-macho/types"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/ziputil"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/ziputil"
 )
 
 // IPAParser is a parser for bower.json file.

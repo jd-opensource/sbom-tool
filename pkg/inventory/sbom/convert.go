@@ -14,11 +14,11 @@ import (
 	"fmt"
 	"os"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/config"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec"
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/config"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 // ConvertSBOM converts a SBOM to another format

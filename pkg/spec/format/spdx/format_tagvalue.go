@@ -16,7 +16,7 @@ import (
 
 	"github.com/spdx/tools-golang/tagvalue"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format"
 )
 
 // TagValueFormat is the tagvalue format of spdx

@@ -13,8 +13,8 @@ package maven
 import (
 	"github.com/vifraa/gopom"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 var badStrs = []string{"$", " ", "%", "@", "<", "[", "]", "(", ")", "/"}

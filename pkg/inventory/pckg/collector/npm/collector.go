@@ -13,9 +13,9 @@ package npm
 import (
 	"os"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 type Collector struct {

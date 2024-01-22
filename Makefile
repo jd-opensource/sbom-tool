@@ -3,7 +3,7 @@ PROJECT_NAME := sbom-tool
 BUILD_DIR := dist
 GIT_TAG := $(shell git describe --tags --always)
 BUILD_TIME := $(shell date '+%Y%m%d')
-REPO := gitee.com/jd-opensource/sbom-tool
+REPO := gitee.com/JD-opensource/sbom-tool
 ROOT_PACKAGE := gitee.com
 # Go variables ####################################
 GO := go
@@ -31,7 +31,7 @@ license: tool.verify.addlicense
 .PHONY: notice
 notice: tool.verify.golicenses
 	@echo "===========> Generating notice file for dependencies"
-	go-licenses report ./... --ignore gitee.com/jd-opensource/sbom-tool --template build/notice.tpl > NOTICE
+	go-licenses report ./... --ignore gitee.com/JD-opensource/sbom-tool --template build/notice.tpl > NOTICE
 
 .PHONY: release
 release: tool.verify.goreleaser

@@ -11,8 +11,8 @@
 package main
 
 import (
-	"gitee.com/jd-opensource/sbom-tool/cmd/subcmds"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/cmd/subcmds"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 func main() {

@@ -17,7 +17,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
 )
 
 func TestPriorityResolutionCargoFile_Parse(t *testing.T) {

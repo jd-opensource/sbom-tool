@@ -15,8 +15,8 @@ import (
 	"reflect"
 	"testing"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 func TestGetFromLicenseField(t *testing.T) {

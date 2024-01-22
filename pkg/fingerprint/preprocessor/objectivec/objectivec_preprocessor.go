@@ -20,8 +20,8 @@ import (
 	"regexp"
 	"strings"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/fingerprint/preprocessor"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/pattern_set"
+	"gitee.com/JD-opensource/sbom-tool/pkg/fingerprint/preprocessor"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/pattern_set"
 )
 
 var (

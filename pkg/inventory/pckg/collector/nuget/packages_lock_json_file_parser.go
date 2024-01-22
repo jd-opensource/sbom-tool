@@ -15,8 +15,8 @@ import (
 	"fmt"
 	"os"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 // PackagesLockJsonFileParser is a parser for packages.lock.json file

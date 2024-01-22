@@ -18,8 +18,8 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 var headers = []string{"PATH", "GIT", "GEM"}

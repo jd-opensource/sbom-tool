@@ -15,8 +15,8 @@ import (
 	"os"
 	"testing"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
 )
 
 func TestAPKParser_Parse(t *testing.T) {

@@ -11,7 +11,7 @@
 package nuget
 
 import (
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
 )
 
 // Collector is package collector for nuget

@@ -17,13 +17,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector/maven/archive"
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector/maven/mvn"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/license"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/ziputil"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector/maven/archive"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector/maven/mvn"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/license"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/ziputil"
 )
 
 var archiveFormats = []string{"**/*.jar", "**/*.war"}

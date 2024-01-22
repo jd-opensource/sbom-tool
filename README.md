@@ -76,7 +76,7 @@ Configuration file parsing and binary package parsing related to the following p
 ## Installation
 1. Download source code compilation(`go 1.18` or above is required)
    ```shell
-   git clone git@gitee.com:jd-opensource/sbom-tool.git
+   git clone git@gitee.com:JD-opensource/sbom-tool.git
    cd sbom-tool
    make
    ```

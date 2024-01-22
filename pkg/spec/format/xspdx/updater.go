@@ -17,9 +17,9 @@ import (
 
 	"github.com/spdx/tools-golang/spdx/v2/common"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format"
-	xspdxModel "gitee.com/jd-opensource/sbom-tool/pkg/spec/format/xspdx/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format"
+	xspdxModel "gitee.com/JD-opensource/sbom-tool/pkg/spec/format/xspdx/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 var ErrDocumentInvalid = errors.New("document invalid")

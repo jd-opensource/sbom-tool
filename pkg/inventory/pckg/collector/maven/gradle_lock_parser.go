@@ -16,7 +16,7 @@ import (
 	"os"
 	"strings"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 // GradleLockParser is a parser for gradle.lockfile

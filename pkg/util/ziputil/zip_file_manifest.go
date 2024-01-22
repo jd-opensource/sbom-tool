@@ -16,7 +16,7 @@ import (
 	"sort"
 	"strings"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
 // FileManifest is a collection of paths and their file metadata.

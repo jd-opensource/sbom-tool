@@ -18,7 +18,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/pattern_set"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/pattern_set"
 )
 
 // APPNAME is the name of the application

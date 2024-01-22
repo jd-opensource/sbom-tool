@@ -19,10 +19,10 @@ import (
 
 	"github.com/anchore/packageurl-go"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/license"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/ziputil"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/license"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/ziputil"
 )
 
 const manifestFile = "META-INF/MANIFEST.MF"

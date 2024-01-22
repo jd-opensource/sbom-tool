@@ -22,13 +22,13 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/config"
-	"gitee.com/jd-opensource/sbom-tool/pkg/fingerprint/digester"
-	"gitee.com/jd-opensource/sbom-tool/pkg/fingerprint/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/fingerprint/preprocessor"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/log"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util/pattern_set"
+	"gitee.com/JD-opensource/sbom-tool/pkg/config"
+	"gitee.com/JD-opensource/sbom-tool/pkg/fingerprint/digester"
+	"gitee.com/JD-opensource/sbom-tool/pkg/fingerprint/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/fingerprint/preprocessor"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util/pattern_set"
 )
 
 var (

@@ -18,8 +18,8 @@ import (
 
 	"github.com/pelletier/go-toml"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/inventory/pckg/collector"
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/inventory/pckg/collector"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 // RustCargoTomlFileParser is a parser for Cargo.toml file

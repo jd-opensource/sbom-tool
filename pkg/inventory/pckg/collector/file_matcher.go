@@ -17,7 +17,7 @@ import (
 	"regexp"
 	"strings"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
 )
 
 // FileMatcher is a file parser, check whether a file matches a rule

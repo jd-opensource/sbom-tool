@@ -19,8 +19,8 @@ import (
 	"github.com/spdx/tools-golang/spdx/v2/v2_3"
 	"github.com/stretchr/testify/assert"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
-	xspdxModel "gitee.com/jd-opensource/sbom-tool/pkg/spec/format/xspdx/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
+	xspdxModel "gitee.com/JD-opensource/sbom-tool/pkg/spec/format/xspdx/model"
 )
 
 func newXSPDXDoc() *xspdxModel.XSPDXDocument {

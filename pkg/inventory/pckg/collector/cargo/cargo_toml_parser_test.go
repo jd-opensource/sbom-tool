@@ -15,7 +15,7 @@ import (
 	"reflect"
 	"testing"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 func TestParseCargoToml(t *testing.T) {

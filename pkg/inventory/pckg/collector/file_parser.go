@@ -11,7 +11,7 @@
 package collector
 
 import (
-	"gitee.com/jd-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/model"
 )
 
 // FileParser  specify a FileMatcher to match files, and parse the recognizable files to discover packages

@@ -1,4 +1,4 @@
-module gitee.com/jd-opensource/sbom-tool
+module gitee.com/JD-opensource/sbom-tool
 
 go 1.18
 

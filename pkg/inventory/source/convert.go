@@ -13,9 +13,9 @@ package source
 import (
 	"time"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/fingerprint/model"
-	model3 "gitee.com/jd-opensource/sbom-tool/pkg/model"
-	"gitee.com/jd-opensource/sbom-tool/pkg/util"
+	"gitee.com/JD-opensource/sbom-tool/pkg/fingerprint/model"
+	model3 "gitee.com/JD-opensource/sbom-tool/pkg/model"
+	"gitee.com/JD-opensource/sbom-tool/pkg/util"
 )
 
 func ConvertFingerprint(fp *model.Fingerprint) *model3.Source {

@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"io"
 
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format"
-	"gitee.com/jd-opensource/sbom-tool/pkg/spec/format/xspdx/model/json"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format"
+	"gitee.com/JD-opensource/sbom-tool/pkg/spec/format/xspdx/model/json"
 )
 
 // JSONFormat is the json format of xspdx
