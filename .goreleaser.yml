@@ -1,0 +1,97 @@
+project_name: sbom-tool
+dist: dist
+env:
+  - GONOPROXY="goproxy.cn"
+  - GOPRIVATE=
+before:
+  hooks:
+    - make clean
+    - go mod tidy
+builds:
+  - main: cmd/main.go
+    flags:
+      - -trimpath
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w -X gitee.com/jd-opensource/sbom-tool/pkg/config.VERSION={{ .Version }}
+archives:
+  - files:
+      - README*
+      - LICENSE*
+      - docs/*/user-guide.md
+      - NOTICE
+    format_overrides:
+      - goos: windows
+        format: zip
+checksum:
+  name_template: 'checksums.txt'
+snapshot:
+  name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^test:'
+      - '^chore'
+      - 'merge conflict'
+      - Merge pull request
+      - Merge remote-tracking branch
+      - Merge branch
+      - Merge request
+      - go mod tidy
+  groups:
+    - title: Dependency updates
+      regexp: '^.*?(feat|fix)\(deps\)!?:.+$'
+      order: 300
+    - title: 'New Features'
+      regexp: '^.*?feat(\([[:word:]]+\))??!?:.+$'
+      order: 100
+    - title: 'Security updates'
+      regexp: '^.*?sec(\([[:word:]]+\))??!?:.+$'
+      order: 150
+    - title: 'Bug fixes'
+      regexp: '^.*?fix(\([[:word:]]+\))??!?:.+$'
+      order: 200
+    - title: 'Documentation updates'
+      regexp: ^.*?doc(\([[:word:]]+\))??!?:.+$
+      order: 400
+    - title: 'Build process updates'
+      regexp: ^.*?build(\([[:word:]]+\))??!?:.+$
+      order: 400
+    - title: Other work
+      order: 9999
+nfpms:
+  - file_name_template: "{{ .ConventionalFileName }}"
+    id: packages
+    homepage: https://sbom.jd.com
+    description: SBOM-TOOL is a command-line tool to generates software bill of materials (SBOM) for software projects.
+    maintainer: JDSBOM <org.sbom1@jd.com>
+    license: Apache-2.0
+    vendor: Jingdong Technology Information Technology Co., Ltd.
+    bindir: /usr/bin
+    section: utils
+    contents:
+      - src: ./LICENSE
+        dst: /usr/share/doc/sbom-tool/copyright
+        file_info:
+          mode: 0644
+      - src: ./docs
+        dst: /usr/share/doc/sbom-tool/docs
+        file_info:
+          mode: 0644
+    formats:
+      - apk
+      - deb
+      - rpm
+    deb:
+      lintian_overrides:
+        - statically-linked-binary
+        - changelog-file-missing-in-native-package
