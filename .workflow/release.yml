@@ -17,17 +17,11 @@ stages:
       - step: build@golang
         name: build_golang
         displayName: Golang 构建
-        golangVersion: '1.20'
+        golangVersion: '1.21'
         commands:
           - '# 默认使用goproxy.cn'
           - export GOPROXY=https://goproxy.cn
           - ''
-          - '# 安装gvm，并使用go1.21'
-          - bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-          - source ~/.gvm/scripts/gvm
-          - ''
-          - gvm install go1.21
-          - gvm use go1.21 --default
           - ''
           - '# 输入你的构建命令'
           - make release
