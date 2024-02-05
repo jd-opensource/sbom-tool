@@ -1,0 +1,62 @@
+version: '1.0'
+name: release
+displayName: release
+triggers:
+  trigger: manual
+  push:
+    tags:
+      prefix:
+        - v-
+variables: {}
+stages:
+  - name: stage-build
+    displayName: 构建
+    strategy: naturally
+    trigger: auto
+    executor: []
+    steps:
+      - step: build@golang
+        name: build_golang
+        displayName: Golang 构建
+        golangVersion: '1.20'
+        commands:
+          - '# 默认使用goproxy.cn'
+          - export GOPROXY=https://goproxy.cn
+          - '# 输入你的构建命令'
+          - make release
+          - ''
+          - mkdir output
+          - ''
+          - mv ./dist/*.apk ./outoput
+          - mv ./dist/*.deb ./outoput
+          - mv ./dist/*.rpm ./outoput
+          - mv ./dist/*.zip ./outoput
+          - mv ./dist/*.tar.gz ./outoput
+          - mv ./dist/checksums.txt ./outoput
+          - ''
+          - ''
+        artifacts:
+          - name: BUILD_ARTIFACT
+            path:
+              - ./output
+        caches:
+          - /go/pkg/mod
+        notify: []
+        strategy:
+          retry: '0'
+  - name: stage-publish
+    displayName: 发布
+    strategy: naturally
+    trigger: auto
+    executor: []
+    steps:
+      - step: publish@general_artifacts
+        name: publish_general_artifacts
+        displayName: 上传制品
+        dependArtifact: BUILD_ARTIFACT
+        artifactName: output
+        notify: []
+        strategy:
+          retry: '0'
+strategy:
+  blocking: true
