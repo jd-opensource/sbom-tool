@@ -8,7 +8,7 @@ before:
     - make clean
     - go mod tidy
 builds:
-  - main: cmd/main.go
+  - main: cmd/sbom-tool/main.go
     flags:
       - -trimpath
     goos:
