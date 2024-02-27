@@ -21,7 +21,7 @@ builds:
     env:
       - CGO_ENABLED=0
     ldflags:
-      - -s -w -X gitee.com/jd-opensource/sbom-tool/pkg/config.VERSION={{ .Version }}
+      - -s -w -X gitee.com/JD-opensource/sbom-tool/pkg/config.VERSION={{ .Version }}
 archives:
   - files:
       - README*
