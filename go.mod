@@ -1,6 +1,6 @@
 module gitee.com/JD-opensource/sbom-tool
 
-go 1.18
+go 1.19
 
 require (
 	github.com/anchore/go-macholibre v0.0.0-20220308212642-53e6d0aaf6fb

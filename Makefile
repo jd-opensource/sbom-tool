@@ -43,20 +43,20 @@ all: linux darwin windows
 .PHONY: linux
 linux:
 	$(GO) mod tidy
-	GOOS=linux GOARCH=amd64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-linux-amd64 cmd/main.go
-	GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-linux-arm64 cmd/main.go
+	GOOS=linux GOARCH=amd64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-linux-amd64 cmd/sbom-tool/main.go
+	GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-linux-arm64 cmd/sbom-tool/main.go
 
 .PHONY: darwin
 darwin:
 	$(GO) mod tidy
-	GOOS=darwin GOARCH=amd64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-darwin-amd64 cmd/main.go
-	GOOS=darwin GOARCH=arm64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-darwin-arm64 cmd/main.go
+	GOOS=darwin GOARCH=amd64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-darwin-amd64 cmd/sbom-tool/main.go
+	GOOS=darwin GOARCH=arm64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-darwin-arm64 cmd/sbom-tool/main.go
 
 .PHONY: windows
 windows:
 	$(GO) mod tidy
-	GOOS=windows GOARCH=amd64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-windows-amd64.exe cmd/main.go
-	GOOS=windows GOARCH=arm64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-windows-arm64.exe cmd/main.go
+	GOOS=windows GOARCH=amd64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-windows-amd64.exe cmd/sbom-tool/main.go
+	GOOS=windows GOARCH=arm64 go build -trimpath -ldflags "-X $(REPO)/pkg/config.VERSION=$(GIT_TAG)-$(BUILD_TIME)-dev" -o bin/$(PROJECT_NAME)-windows-arm64.exe cmd/sbom-tool/main.go
 
 
 .PHONY: clean
