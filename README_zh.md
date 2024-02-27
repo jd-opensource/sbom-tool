@@ -90,6 +90,12 @@ SBOM-TOOL 是通过源码仓库、代码指纹、构建环境、制品信息、�
     - MacOS amd64:  sbom-tool-darwin-amd64
     - MacOS arm64: sbom-tool-darwin-arm64
 
+或者通过 go install 安装
+   ```shell
+      go install gitee.com/JD-opensource/sbom-tool/cmd/sbom-tool@latest
+   ```
+或者通过下载二进制文件安装:   [SBOM-TOOL发行版](https://gitee.com/JD-opensource/sbom-tool/releases)
+
 ## 子命令说明
 
 

@@ -88,6 +88,11 @@ Configuration file parsing and binary package parsing related to the following p
     - MacOS amd64:  sbom-tool-darwin-amd64
     - MacOS arm64: sbom-tool-darwin-arm64
 
+Or install via go install
+   ```shell
+      go install gitee.com/JD-opensource/sbom-tool/cmd/sbom-tool@latest
+   ```
+Or install via downloading the binary:   [SBOM-TOOL Releases](https://gitee.com/JD-opensource/sbom-tool/releases)
 ## Subcommands
 
 
