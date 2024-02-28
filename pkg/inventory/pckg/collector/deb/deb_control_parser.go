@@ -20,6 +20,8 @@ import (
 	"gitee.com/JD-opensource/sbom-tool/pkg/util/log"
 )
 
+// DebControlFileParser is a parser for deb control file
+// see: https://www.debian.org/doc/debian-policy/ch-controlfields.html
 type DebControlFileParser struct{}
 
 func NewDebControlFileParser() *DebControlFileParser {

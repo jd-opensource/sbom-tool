@@ -24,6 +24,7 @@ import (
 )
 
 // debArchiveParser is a parser for deb archive file
+// see: https://www.debian.org/doc/debian-policy/ch-archive.html
 type DEBArchiveParser struct{}
 
 // NewDEBArchiveParser returns a new debArchiveParser
