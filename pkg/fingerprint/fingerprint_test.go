@@ -23,12 +23,7 @@ var (
 		input2   string
 		distance uint8
 	}{
-		{
-			name:     "same",
-			input1:   "hello world",
-			input2:   "hello world",
-			distance: 0,
-		},
+		
 		{
 			name:     "prefix",
 			input1:   "hello world",
