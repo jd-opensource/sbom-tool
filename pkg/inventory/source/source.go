@@ -11,6 +11,7 @@
 package source
 
 import (
+	"net/url"
 	"path/filepath"
 	"time"
 
@@ -62,7 +63,7 @@ func repoInfo(projectPath string, source *model.Source) {
 		conf, err := repo.Config()
 		if err == nil {
 			if remote, ok := conf.Remotes["origin"]; ok {
-				source.Repository = remote.URLs[0]
+				source.Repository = normalizeHttpUrl(remote.URLs[0])
 			}
 		}
 		ref, err := repo.Head()
@@ -75,4 +76,16 @@ func repoInfo(projectPath string, source *model.Source) {
 			source.Revision = commit.Hash.String()
 		}
 	}
+}
+
+func normalizeHttpUrl(rawUrl string) string {
+	if rawUrl == "" {
+		return ""
+	}
+	parsedUrl, err := url.Parse(rawUrl)
+	if err != nil {
+		return ""
+	}
+	parsedUrl.User = nil
+	return parsedUrl.String()
 }
