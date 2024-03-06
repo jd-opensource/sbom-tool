@@ -13,6 +13,7 @@ package source
 import (
 	"net/url"
 	"path/filepath"
+	"strings"
 	"time"
 
 	gogit "github.com/go-git/go-git/v5"
@@ -63,7 +64,10 @@ func repoInfo(projectPath string, source *model.Source) {
 		conf, err := repo.Config()
 		if err == nil {
 			if remote, ok := conf.Remotes["origin"]; ok {
-				source.Repository = normalizeHttpUrl(remote.URLs[0])
+				source.Repository = remote.URLs[0]
+				if strings.HasPrefix(source.Repository, "http") {
+					source.Repository = normalizeHttpUrl(source.Repository)
+				}
 			}
 		}
 		ref, err := repo.Head()
@@ -84,7 +88,7 @@ func normalizeHttpUrl(rawUrl string) string {
 	}
 	parsedUrl, err := url.Parse(rawUrl)
 	if err != nil {
-		return ""
+		return rawUrl
 	}
 	parsedUrl.User = nil
 	return parsedUrl.String()
