@@ -219,7 +219,8 @@ func getItemLinesAndMainPkg(pkgMap map[string]*model.Package, lines []string, so
 	}
 
 	for _, segment := range segments {
-		if segment.headline == "runtimeClasspath" {
+		// Look for "untimeClasspath" since it could be "RuntimeClasspath" or "runtimeClasspath"
+		if strings.Contains(segment.headline, "untimeClasspath") {
 			itemLines = segment.lines
 		}
 	}
